@@ -80,11 +80,6 @@ class _TransferState extends State<Transfer> {
                   ])),
               child: ListView(
                 children: [
-                  // MaterialButton(
-                  //     onPressed: () async {
-                  //       await sqlDb.mydeleteDatabase();
-                  //     },
-                  //     child: Text("delete database")),
                   ListView.builder(
                       itemCount: users.length,
                       physics: NeverScrollableScrollPhysics(),
@@ -113,22 +108,6 @@ class _TransferState extends State<Transfer> {
                             trailing: Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
-                                // IconButton(
-                                //     onPressed: () async {
-                                //       // int response = await sqlDb.deleteData(
-                                //       //     "DELETE FROM user WHERE id = ${users[i]['id']}");
-                                //       int response = await sqlDb.delete(
-                                //           "user", "id = ${users[i]['id']}");
-                                //       if (response > 0) {
-                                //         users.removeWhere((element) =>
-                                //             element['id'] == users[i]['id']);
-                                //         setState(() {});
-                                //       }
-                                //     },
-                                //     icon: Icon(
-                                //       Icons.delete,
-                                //       color: Colors.red,
-                                //     )),
                                 IconButton(
                                     onPressed: () {
                                       Navigator.of(context)

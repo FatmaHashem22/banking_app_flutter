@@ -211,54 +211,6 @@ class _amountTransState extends State<amountTrans> {
               ),
             )
           ],
-          //   Form(
-          //       key: formstate,
-          //       child: Column(
-          //         children: [
-          //           TextFormField(
-          //             controller: name,
-          //             decoration: InputDecoration(hintText: "name"),
-          //           ),
-          //           TextFormField(
-          //             controller: email,
-          //             decoration: InputDecoration(hintText: "email"),
-          //           ),
-          //           TextFormField(
-          //             keyboardType: TextInputType.number,
-          //             controller: balance,
-          //             decoration: InputDecoration(hintText: "balance"),
-          //           ),
-          //           Container(height: 20),
-          //           MaterialButton(
-          //             textColor: Colors.white,
-          //             color: Colors.blue,
-          //             onPressed: () async {
-          //               // int response = await sqlDb.updateData('''
-          //               //     UPDATE user SET
-          //               //     name    = "${name.text}",
-          //               //     email   = "${email.text}",
-          //               //     balance =  ${balance.text}
-          //               //     WHERE id = ${widget.id}
-          //               //     ''');
-          //               int response = await sqlDb.update(
-          //                   "user",
-          //                   {
-          //                     "name": "${name.text}",
-          //                     "email": "${email.text}",
-          //                     "balance": "${balance.text}"
-          //                   },
-          //                   "id = ${widget.id}");
-
-          //               if (response > 0) {
-          //                 Navigator.of(context).pushAndRemoveUntil(
-          //                     MaterialPageRoute(builder: (context) => Home()),
-          //                     (route) => false);
-          //               }
-          //             },
-          //             child: Text("Save Changes"),
-          //           )
-          //         ],
-          //       ))
         ),
       ),
     );

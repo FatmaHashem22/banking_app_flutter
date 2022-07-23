@@ -1,6 +1,5 @@
 import 'dart:ffi';
 import 'package:banking_app/NavigationDrawerWidget.dart';
-
 import "amountTrans.dart";
 import 'package:banking_app/sqldb.dart';
 import 'package:flutter/material.dart';
@@ -81,12 +80,6 @@ class _TransactionsState extends State<Transactions> {
                   ])),
               child: ListView(
                 children: [
-                  // MaterialButton(
-                  //     onPressed: () async {
-                  //       await sqlDb.mydeleteDatabase();
-                  //     },
-                  //     child: Text("delete database")),
-
                   ListView.builder(
                       itemCount: rtrans.length,
                       physics: NeverScrollableScrollPhysics(),
@@ -127,8 +120,6 @@ class _TransactionsState extends State<Transactions> {
                                 ),
                                 IconButton(
                                     onPressed: () async {
-                                      // int response = await sqlDb.deleteData(
-                                      //     "DELETE FROM user WHERE id = ${users[i]['id']}");
                                       int response = await sqlDb.delete(
                                           "transfers",
                                           "id = ${rtrans[i]['id']}");

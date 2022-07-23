@@ -1,4 +1,4 @@
-# banking_app
+# Simple Banking App for Transaction Flutter
 
 A new Flutter project.
 
